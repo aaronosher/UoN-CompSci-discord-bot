@@ -1,2 +1,2 @@
-# UoN-CompSci-discord-bot
+# Computer Science Discord Server Bot 
 Discord for the UoN Computer Science Discord
