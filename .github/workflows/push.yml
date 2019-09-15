@@ -1,0 +1,15 @@
+on: push
+name: Mirror Workflow
+jobs:
+  mirrorAction:
+    name: Mirror Action
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Mirror Action
+      uses: spyoungtech/mirror-action@master
+      env:
+        GIT_PASSWORD: ${{ secrets.GIT_PASSWORD }}
+        GIT_USERNAME: psyao5
+      with:
+        args: https://projects.cs.nott.ac.uk/psyao5/UoN-CompSci-discord-bot.git
